@@ -7,45 +7,39 @@
     <p>Bare Bone Cart app with add and remove features</p>
     <button
       onclick="
-        console.log(`Cart Quantity:  ${cartQuantity}`);
+        cartQuantity1(-1);
         "
     >
       Show Quantity
     </button>
     <button
       onclick="
-    cartQuantity+=1;
-    console.log(`Added +1 item to the cart ${cartQuantity}`);
+      cartQuantity1(1);
     "
     >
       Add to Cart
     </button>
     <button
       onclick="
-    cartQuantity+=2;
-    console.log(`Added +2 item to the cart ${cartQuantity}`);
+      cartQuantity1(2);
     "
     >
       +2
     </button>
     <button
       onclick="
-    cartQuantity+=3;
-    console.log(`Added +3 item to the cart ${cartQuantity}`);
+      cartQuantity1(3);
     "
     >
       +3
     </button>
     <button
       onclick="
-    cartQuantity=0;
-    console.log(`Resetting the cart item to ${cartQuantity}`);
+      cartQuantity1(undefined);
     "
     >
       Reset Cart
     </button>
-    <script>
-      let cartQuantity = 0;
-    </script>
+    <script src="./core.js"></script>
   </body>
 </html>
